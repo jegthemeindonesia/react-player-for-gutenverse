@@ -1,6 +1,6 @@
 {
     "name": "react-player-for-gutenverse",
-    "version": "2.14.1",
+    "version": "2.14.2",
     "description": "A React component for playing a variety of URLs, including file paths, YouTube, Facebook, Twitch, SoundCloud, Streamable, Vimeo, Wistia and DailyMotion",
     "main": "lib/index.js",
     "typings": "lib/index.d.ts",
@@ -24,7 +24,7 @@
         "version": "auto-changelog -p && npm run build:dist && npm run build:standalone && git add CHANGELOG.md dist",
         "prepublishOnly": "npm run build:lib && npm run build:lazy && npm run build:dist && npm run build:es6 && npm run build:standalone && node scripts/pre-publish.js && cp -r types/* .",
         "postpublish": "node scripts/post-publish.js && npm run clean",
-        "prepare": "npm run build:lib"
+        "prepare": "npm run build:lib && npm run build:dist && npm run build:standalone"
     },
     "repository": {
         "type": "git",
