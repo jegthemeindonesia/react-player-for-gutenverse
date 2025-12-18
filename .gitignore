@@ -1,0 +1,8 @@
+node_modules
+dist
+lib
+lazy
+demo
+coverage
+.DS_Store
+*.log
